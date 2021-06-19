@@ -15,7 +15,6 @@ RUN yum install -y git-core \
     && cd $BLOG_DIR \
     && npm install hexo-deployer-git --save \
     && npm install hexo-excerpt --save \
-    && npm install hexo-wordcount --save \
     && npm install hexo-generator-searchdb --save
 
 RUN cd $BLOG_DIR \
