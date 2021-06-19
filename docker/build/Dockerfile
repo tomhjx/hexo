@@ -15,9 +15,11 @@ RUN yum install -y git-core \
     && cd $BLOG_DIR \
     && npm install hexo-deployer-git --save \
     && npm install hexo-excerpt --save \
+    && npm install hexo-word-counter --save \
+    && npm install hexo-optimize --save \
     && npm install hexo-generator-searchdb --save
 
 RUN cd $BLOG_DIR \
-    && git clone --branch v7.8.0 https://github.com/theme-next/hexo-theme-next themes/next
+    && git clone --branch v8.5.0 https://github.com/theme-next/hexo-theme-next themes/next
 
 WORKDIR $BLOG_DIR
