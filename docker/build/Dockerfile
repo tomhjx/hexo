@@ -9,7 +9,7 @@ ARG useremail
 RUN yum install -y git-core \
     && curl -sL https://rpm.nodesource.com/setup_13.x | bash - \
     && yum install -y nodejs \
-    && npm install -g hexo@5.2.0 \
+    && npm install -g hexo@5.4.0 \
     && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && hexo init $BLOG_DIR \
     && cd $BLOG_DIR \
