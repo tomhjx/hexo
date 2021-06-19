@@ -20,7 +20,7 @@ RUN yum install -y git-core \
     && npm install hexo-generator-searchdb --save
 
 RUN cd $BLOG_DIR \
-    && git clone --branch v8.5.0 https://github.com/hexo-theme-next/hexo-theme-next themes/next
+    && git clone --branch v8.5.0 https://github.com/next-theme/hexo-theme-next themes/next
 
 
 WORKDIR $BLOG_DIR
