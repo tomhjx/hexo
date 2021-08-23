@@ -7,7 +7,7 @@ ARG username
 ARG useremail
 
 RUN yum install -y git-core \
-    && curl -sL https://rpm.nodesource.com/setup_13.x | bash - \
+    && curl -sL https://rpm.nodesource.com/setup_14.x | bash - \
     && yum install -y nodejs \
     && npm install -g hexo@5.4.0 \
     && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
