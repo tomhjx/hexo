@@ -19,7 +19,8 @@ RUN yum install -y git-core \
     && npm install hexo-excerpt --save \
     && npm install hexo-word-counter --save \
     && npm install hexo-optimize --save \
-    && npm install hexo-generator-searchdb --save
+    && npm install hexo-generator-searchdb --save \
+    && npm list
 
 RUN cd $BLOG_DIR \
     && git clone --branch v8.7.0 https://github.com/next-theme/hexo-theme-next themes/next
