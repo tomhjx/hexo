@@ -7,7 +7,7 @@ ARG username
 ARG useremail
 
 RUN yum install -y git-core \
-    && curl -sL https://rpm.nodesource.com/setup_14.x | bash - \
+    && curl -sL https://rpm.nodesource.com/setup_13.x | bash - \
     && yum install -y nodejs \
     && npm install -g hexo@5.4.0 \
     && cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
@@ -20,7 +20,10 @@ RUN yum install -y git-core \
     && npm install hexo-word-counter --save \
     && npm install hexo-optimize --save \
     && npm install hexo-generator-searchdb --save \
-    && npm list
+    && hexo -v \
+    && node -v \
+    && npm -v \
+    && npm list \
 
 RUN cd $BLOG_DIR \
     && git clone --branch v8.7.0 https://github.com/next-theme/hexo-theme-next themes/next

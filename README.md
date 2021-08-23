@@ -2,12 +2,12 @@
 hexo blog
 
 
-```bash
 
-~$ npm list
-```
 
 ```
+$ npm list
+-------
+
 hexo-site@0.0.0 /var/www/blog
 +-- hexo@5.4.0
 | +-- abbrev@1.1.1
