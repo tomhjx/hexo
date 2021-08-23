@@ -5,6 +5,44 @@ hexo blog
 
 
 ```
+$ hexo -v
+------
+
+INFO  Validating config
+hexo: 5.4.0
+hexo-cli: 4.3.0
+os: linux 5.8.0-1039-azure CentOS Linux 7 (Core)
+node: 13.14.0
+v8: 7.9.317.25-node.32
+uv: 1.37.0
+zlib: 1.2.11
+brotli: 1.0.7
+ares: 1.16.0
+modules: 79
+nghttp2: 1.40.0
+napi: 6
+llhttp: 2.0.4
+openssl: 1.1.1g
+cldr: 36.1
+icu: 66.1
+tz: 2019c
+unicode: 13.0
+
+```
+
+```
+$ node -v
+-----
+v13.14.0
+```
+
+```
+$ npm -v
+------
+6.14.4
+```
+
+```
 $ npm list
 -------
 
