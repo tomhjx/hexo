@@ -15,6 +15,7 @@ RUN yum install -y git-core \
     && cd $BLOG_DIR \
     && npm un hexo-renderer-marked --save \
     && npm i hexo-renderer-markdown-it --save \
+    && npm install markdown-it-multimd-table --save \
     && npm install hexo-deployer-git --save \
     && npm install hexo-excerpt --save \
     && npm install hexo-word-counter --save \
